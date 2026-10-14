@@ -77,6 +77,22 @@ footer{padding:26px 20px;text-align:center;font-size:12px;color:var(--cinza-text
 footer a{color:var(--cor-primaria)}
 .text-center{text-align:center}.mt-24{margin-top:24px}.mt-32{margin-top:32px}
 @media(max-width:640px){.secao{padding:40px 16px}}
+
+.aprovado-banner{background:linear-gradient(90deg,#16A34A,#15803d);color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(13px,2.6vw,15.5px);text-align:center;padding:14px 18px;border-radius:12px;margin-bottom:20px;box-shadow:0 8px 20px rgba(22,163,74,.25);line-height:1.5}
+.aprovado-banner strong{text-decoration:underline}
+.subheadline{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(16px,3.4vw,20px);color:var(--cor-primaria);margin:0 0 14px}
+.galeria-dinamica{position:relative;overflow:hidden;margin:0 -20px 24px;padding:4px 0}
+.galeria-dinamica::before,.galeria-dinamica::after{content:"";position:absolute;top:0;bottom:0;width:36px;z-index:2;pointer-events:none}
+.galeria-dinamica::before{left:0;background:linear-gradient(90deg,var(--branco),transparent)}
+.galeria-dinamica::after{right:0;background:linear-gradient(270deg,var(--branco),transparent)}
+.galeria-track{display:flex;gap:14px;width:max-content;padding:8px 20px;animation:galeria-scroll 26s linear infinite}
+.galeria-dinamica:hover .galeria-track{animation-play-state:paused}
+@keyframes galeria-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.galeria-track img{width:130px;height:163px;object-fit:cover;border-radius:12px;border:1px solid var(--borda);box-shadow:0 8px 18px rgba(0,0,0,.14);flex-shrink:0;transition:transform .25s,box-shadow .25s}
+.galeria-track img:nth-child(4n+2){transform:rotate(-2.5deg)}
+.galeria-track img:nth-child(4n+4){transform:rotate(2.5deg)}
+.galeria-track img:hover{transform:scale(1.07) rotate(0deg) !important;box-shadow:0 14px 28px rgba(0,0,0,.22);z-index:3;position:relative}
+@media(max-width:560px){.galeria-track img{width:104px;height:130px}}
 </style>
 </head>
 <body>
@@ -85,15 +101,23 @@ footer a{color:var(--cor-primaria)}
 
 <section class="hero">
   <div class="container">
+    <div class="aprovado-banner">✅ <strong>Compra aprovada!</strong> Já estamos enviando o material no seu email. Enquanto isso, veja essa oportunidade para sua empresa 👇</div>
     <span class="badge-desconto">🔥 Liberado Só Para Quem Acabou de Comprar</span>
     <p class="aviso-espera">⚠️ Espera! Não feche essa página...</p>
     <h1>Seus vídeos já estão a caminho. Mas <span class="destaque">só vídeo não enche o feed</span> todo santo dia</h1>
+    <p class="subheadline">200 mídias prontas para Conserto de TV</p>
     <p class="hero-sub">Você acabou de garantir os Objetos Falantes para Conserto de TV. Agora imagine completar sua estratégia com <strong>200 mídias prontas e 100% editáveis</strong> — posts, banners e artes para nunca mais faltar conteúdo no seu Instagram e WhatsApp.</p>
-    <div class="galeria" style="margin-bottom:28px;">
+    <div class="galeria-dinamica" style="margin-bottom:28px;">
+    <div class="galeria-track">
       <img src="midias/m1.webp" alt="Exemplo de mídia 1" loading="lazy">
       <img src="midias/m2.webp" alt="Exemplo de mídia 2" loading="lazy">
       <img src="midias/m3.webp" alt="Exemplo de mídia 3" loading="lazy">
       <img src="midias/m4.webp" alt="Exemplo de mídia 4" loading="lazy">
+      <img src="midias/m1.webp" alt="Exemplo de mídia 1" loading="lazy">
+      <img src="midias/m2.webp" alt="Exemplo de mídia 2" loading="lazy">
+      <img src="midias/m3.webp" alt="Exemplo de mídia 3" loading="lazy">
+      <img src="midias/m4.webp" alt="Exemplo de mídia 4" loading="lazy">
+    </div>
     </div>
     <a href="#planos" class="btn-cta" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'});return false;">✅ SIM! QUERO AS 200 MÍDIAS POR R$57,90</a>
     <button type="button" class="btn-nao" onclick="document.getElementById('detalhes').scrollIntoView({behavior:'smooth'})">Ainda não decidi, quero ver mais detalhes</button>
@@ -136,9 +160,25 @@ footer a{color:var(--cor-primaria)}
   <div class="container">
     <h2 class="secao-titulo">Veja Alguns <span class="destaque">Exemplos Reais</span></h2>
     <p class="secao-sub">Uma pequena amostra do que você vai receber</p>
-    <div class="galeria">
-      <img src="midias/m1.webp" alt="Mídia 1" loading="lazy"><img src="midias/m2.webp" alt="Mídia 2" loading="lazy"><img src="midias/m3.webp" alt="Mídia 3" loading="lazy"><img src="midias/m4.webp" alt="Mídia 4" loading="lazy">
-      <img src="midias/m5.webp" alt="Mídia 5" loading="lazy"><img src="midias/m6.webp" alt="Mídia 6" loading="lazy"><img src="midias/m7.webp" alt="Mídia 7" loading="lazy"><img src="midias/m8.webp" alt="Mídia 8" loading="lazy">
+    <div class="galeria-dinamica">
+    <div class="galeria-track">
+      <img src="midias/m1.webp" alt="Mídia 1" loading="lazy">
+      <img src="midias/m2.webp" alt="Mídia 2" loading="lazy">
+      <img src="midias/m3.webp" alt="Mídia 3" loading="lazy">
+      <img src="midias/m4.webp" alt="Mídia 4" loading="lazy">
+      <img src="midias/m5.webp" alt="Mídia 5" loading="lazy">
+      <img src="midias/m6.webp" alt="Mídia 6" loading="lazy">
+      <img src="midias/m7.webp" alt="Mídia 7" loading="lazy">
+      <img src="midias/m8.webp" alt="Mídia 8" loading="lazy">
+      <img src="midias/m1.webp" alt="Mídia 1" loading="lazy">
+      <img src="midias/m2.webp" alt="Mídia 2" loading="lazy">
+      <img src="midias/m3.webp" alt="Mídia 3" loading="lazy">
+      <img src="midias/m4.webp" alt="Mídia 4" loading="lazy">
+      <img src="midias/m5.webp" alt="Mídia 5" loading="lazy">
+      <img src="midias/m6.webp" alt="Mídia 6" loading="lazy">
+      <img src="midias/m7.webp" alt="Mídia 7" loading="lazy">
+      <img src="midias/m8.webp" alt="Mídia 8" loading="lazy">
+    </div>
     </div>
     <div class="text-center mt-24"><a href="#planos" class="btn-cta" style="display:inline-block;max-width:420px;" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'});return false;">QUERO GARANTIR O PACOTE COMPLETO</a></div>
   </div>

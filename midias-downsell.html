@@ -111,7 +111,7 @@ footer a{color:var(--cor-primaria)}
       <p style="color:var(--cinza-texto);font-size:13.5px;margin-bottom:4px;">Por apenas, pagamento único</p>
       <div class="valor"><sup>R$</sup>37,90</div>
       <p class="tipo">Acesso imediato por email • Vitalício</p>
-      <a href="https://app.mivvo.com.br/checkout/01a13717-ba76-7446-b89e-13baddbb5bb2" class="btn-cta">✅ SIM! QUERO AS 200 MÍDIAS POR R$37,90</a>
+      <div id="mivvo-upsell"></div>
       <button type="button" class="btn-nao" onclick="location.href='obrigado.html'">Não, vou perder essa oportunidade</button>
       <div class="selos"><span>🔒 Pagamento Seguro</span><span>⚡ Acesso Imediato</span><span>♾️ Vitalício</span><span>🎨 100% Editável</span></div>
     </div>
@@ -143,7 +143,7 @@ footer a{color:var(--cor-primaria)}
       <h3>Risco Zero — Garantia de 7 Dias</h3>
       <p>Se não gostar, devolvemos 100% do seu dinheiro em até 7 dias. Sem perguntas.</p>
     </div>
-    <div class="text-center mt-32"><a href="https://app.mivvo.com.br/checkout/01a13717-ba76-7446-b89e-13baddbb5bb2" class="btn-cta" style="display:inline-block;max-width:460px;">👉 QUERO GARANTIR POR R$37,90 ANTES QUE SUMA</a></div>
+    <div class="text-center mt-32"><a href="#planos" class="btn-cta" style="display:inline-block;max-width:460px;" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'});return false;">👉 QUERO GARANTIR AGORA</a></div>
   </div>
 </section>
 
@@ -170,5 +170,6 @@ footer a{color:var(--cor-primaria)}
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1368822951618691');fbq('track','PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1368822951618691&ev=PageView&noscript=1"/></noscript>
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+<script src="https://api.mivvo.com.br/upsell-flow/script/01a13772-19d8-782d-b281-1d957a102a93" data-flow-id="01a13772-19d8-782d-b281-1d957a102a93"></script>
 </body>
 </html>

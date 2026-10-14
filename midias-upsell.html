@@ -95,7 +95,7 @@ footer a{color:var(--cor-primaria)}
       <img src="midias/m3.webp" alt="Exemplo de mídia 3" loading="lazy">
       <img src="midias/m4.webp" alt="Exemplo de mídia 4" loading="lazy">
     </div>
-    <a href="https://app.mivvo.com.br/checkout/01a1371b-533b-7d2c-8d2a-5d983f10177f" class="btn-cta">✅ SIM! QUERO AS 200 MÍDIAS POR R$57,90</a>
+    <a href="#planos" class="btn-cta" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'});return false;">✅ SIM! QUERO AS 200 MÍDIAS POR R$57,90</a>
     <button type="button" class="btn-nao" onclick="document.getElementById('detalhes').scrollIntoView({behavior:'smooth'})">Ainda não decidi, quero ver mais detalhes</button>
   </div>
 </section>
@@ -165,7 +165,7 @@ footer a{color:var(--cor-primaria)}
       <p style="color:var(--cinza-texto);font-size:13.5px;margin-bottom:4px;">Pagamento único • Sem mensalidade</p>
       <div class="valor"><sup>R$</sup>57,90</div>
       <p class="tipo">Acesso imediato por email • Vitalício</p>
-      <a href="https://app.mivvo.com.br/checkout/01a1371b-533b-7d2c-8d2a-5d983f10177f" class="btn-cta">✅ SIM! QUERO AS 200 MÍDIAS AGORA</a>
+      <div id="mivvo-upsell"></div>
       <button type="button" class="btn-nao" onclick="location.href='midias-downsell.html'">Não, prefiro ver uma opção mais em conta</button>
       <div class="selos"><span>🔒 Pagamento Seguro</span><span>⚡ Acesso Imediato</span><span>♾️ Vitalício</span><span>🎨 100% Editável</span></div>
     </div>
@@ -189,7 +189,7 @@ footer a{color:var(--cor-primaria)}
     <div class="faq-item" onclick="this.classList.toggle('aberto')"><b>O acesso é vitalício mesmo? +</b><p>Sim. Você paga uma única vez e o acesso ao pacote de 200 mídias é seu para sempre, sem mensalidade.</p></div>
     <div class="faq-item" onclick="this.classList.toggle('aberto')"><b>Funciona para qualquer tipo de post? +</b><p>Sim. O pacote traz variações para promoções, avisos, dicas e conteúdo do dia a dia — tudo pensado para Conserto de TV.</p></div>
     <div class="faq-item" onclick="this.classList.toggle('aberto')"><b>Quando recebo o acesso? +</b><p>Assim que o pagamento for confirmado, você recebe o acesso direto no seu email, em poucos minutos.</p></div>
-    <div class="text-center mt-32"><a href="https://app.mivvo.com.br/checkout/01a1371b-533b-7d2c-8d2a-5d983f10177f" class="btn-cta" style="display:inline-block;max-width:460px;">👉 QUERO GARANTIR AS 200 MÍDIAS POR R$57,90</a></div>
+    <div class="text-center mt-32"><a href="#planos" class="btn-cta" style="display:inline-block;max-width:460px;" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'});return false;">👉 QUERO GARANTIR AS 200 MÍDIAS AGORA</a></div>
   </div>
 </section>
 
@@ -215,5 +215,6 @@ footer a{color:var(--cor-primaria)}
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1368822951618691');fbq('track','PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1368822951618691&ev=PageView&noscript=1"/></noscript>
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+<script src="https://api.mivvo.com.br/upsell-flow/script/01a13772-19d8-782d-b281-1d957a102a93" data-flow-id="01a13772-19d8-782d-b281-1d957a102a93"></script>
 </body>
 </html>
